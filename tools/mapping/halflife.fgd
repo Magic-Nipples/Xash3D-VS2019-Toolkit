@@ -2880,7 +2880,7 @@
 //
 // ENV_MODEL - Magic Nipples
 //
-@PointClass base(Targetname, Angles, RenderFields) studio() = env_model : "prop models with sequences" 
+@PointClass base(Targetname, Angles, RenderFields) studio() = env_model : "prop model with sequences" 
 [
 	model(studio) : "Model name"
 	skin(integer) : "Skin" : 0
@@ -2925,4 +2925,16 @@
   [
     1 : "Start On" : 1
   ]
+]
+
+//
+// PROP_PHYSICS - Magic Nipples
+//
+@PointClass base(Targetname, Angles, RenderFields) studio() = prop_physics : "prop model with newton physics" 
+[
+	model(studio) : "Model name"
+	skin(integer) : "Skin" : 0
+	body(integer) : "Body" : 0
+	//NEW 1.0
+	scale(string) : "Scale (1.0 = normal size)"
 ]
